@@ -1,3 +1,9 @@
+Version 1.2 (2013-12-03)
+------------------------
+
+* Add a example in Buildout
+* Porting code to Python 3
+
 Version 1.1 (2013-12-03)
 ------------------------
 

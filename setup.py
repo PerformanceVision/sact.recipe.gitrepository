@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
       name="sact.recipe.gitrepository",
-      version="1.1",
+      version="1.2",
       author="Sebastien Douche",
       author_email="sdouche@gmail.com",
       url="http://github.com/securactive/sact.recipe.gitrepository",
