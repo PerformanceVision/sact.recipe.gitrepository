@@ -3,8 +3,8 @@ and stores it into its part's directory. A simple task using this
 could look like this::
 
     [myapp]
-    recipe=sact.recipe.git
-    repository=git://github.com/securactive/sact.recipe.git.git
+    recipe=sact.recipe.gitrepository
+    repository=git://github.com/securactive/sact.recipe.gitrepository
     rev=7c73978b55fcadbe2cd6f2abbefbedb5a85c2c8c
 
 This would store the repository under ${buildout:directory}/parts/myapp
@@ -55,7 +55,7 @@ If you want to install a part from the download-cache, this is now possible, too
     install-from-cache = true
 
     [mylib]
-    recipe = zerokspot.recipe.git
+    recipe = sact.recipe.gitrepository
     repository = http://domain.com/repo.git
 
 With this configuration, the recipe will look for /var/cache/buildout/repo and
