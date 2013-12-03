@@ -28,7 +28,11 @@ def get_reponame(url, branch = None, rev = None):
     Given the URL of a repository, this function returns the name of it after
     a clone process.
     """
-    base = filter(lambda x: len(x), url.split('/'))[-1]
+    if url.endswith('/'):
+        base = url.split('/')[-2]
+    else:
+        base = url.split('/')[-1]
+
     if base.endswith('.git'):
         base = base[:-4]
 
